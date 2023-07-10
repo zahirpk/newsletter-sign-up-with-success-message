@@ -4,6 +4,7 @@ let errorMessage = document.getElementById('emailError');
 const MainContainer=document.querySelector(".container");
 const thankYouSubscribing = document.querySelector('.card_container')
 const homePage=document.querySelector("#Dimiss_Button")
+const embedEmailId= document.getElementById("embedEmailId");
 myButton.addEventListener('click', function(event) {
   const checkEmail = emailValidate.value;
   const isValidEmail = validateEmail(checkEmail);
@@ -15,6 +16,7 @@ myButton.addEventListener('click', function(event) {
   }else{
     MainContainer.style.display="none"
     thankYouSubscribing.style.display="flex"
+    embedEmailId.innerHTML=emailValidate.value;
     homePage.addEventListener('click',function(event){
       MainContainer.style.display="flex"
       thankYouSubscribing.style.display="none"
