@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Frontend Mentor | Newsletter sign-up form with success message</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+ <main class="container">
+  <div class="mobile_image">
+     <div class="mobile_background_image"><img src="assets/images/illustration-sign-up-mobile.svg" alt="mobile-_background_image"></div>
+     <div class="desktop_backgound_image"><img src="assets/images/illustration-sign-up-desktop.svg" alt="desktop_backgound_images"></div>
+  </div>
+  <section class="middle_section">
+      <div class="text_container">
+    <h1 id="title"> Stay updated!</h1>
+    <p id="title_description">Join 60,000+ product managers receiving monthly updates on:</p>
+    <div class="features">
+      <div class="list_icons">
+      <div> <img src="assets/images/icon-list.svg" alt="list_icon"> </div> 
+        <p id="prduct_feature"> Product discovery and building what matters</p>
+      </div>
+      <div class="list_icons">
+        <div><img src="assets/images/icon-list.svg" alt="list_icon"> </div>
+        <p id="prduct_feature">Measuring to ensure updates are a success</p>
+      </div>
+      <div class="list_icons">
+       <div><img src="assets/images/icon-list.svg" alt="list_icon">  </div> 
+        <p id="prduct_feature">  And much more!</p> 
+      </div>
+    </div>
+    <div class="email">
+      <label for="email">Email address</label>
+      <input 
+      type="email" 
+      placeholder=" email@company.com" 
+      class="emailInputField"
+      id="email">
+    </div>
+    <div id="emailError"></div>
+    <div  >
+      
+      <button id="click_button"  class="subscribe_button"> Subscribe to monthly newsletter </button>
+    </div>
+  </div>
+</section>
+ </main>
+ <section class="card_container">
+ <div>  
+   <img src="assets/images/icon-list.svg" alt="list_icon">
+  <h1 id="thanks_for_subscribing_text"> Thanks for subscribing!</h1>
+  <p id="description"> A confirmation email has been sent to  <strong>ash@loremcompany.com. </strong>
+      Please open it and click the button inside to confirm your subscription.</p></div>
+    <button  class="subscribe_button" id="Dimiss_Button"> Dismiss message </button>
+ </section>
+ <script src="script.js"></script>
+</body>
+</html>
